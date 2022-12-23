@@ -63,7 +63,9 @@ export default function Home({ data }) {
       if (response.status === 201) {
         router.push({ pathname: "/success", query: successPageData })
       } else {
-        alert("Something went wrong, unable to submit form")
+        alert(
+          "Something went wrong, unable to submit form at now. Please try again later"
+        )
       }
     },
   })
