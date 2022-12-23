@@ -6,7 +6,7 @@ import downloadImg from "../public/download.png"
 import { useFormik } from "formik"
 import * as Yup from "yup"
 import { useRouter } from "next/router"
-import { fetchData, postData } from "./api/constant"
+import { fetchData, postData } from "../api/constant"
 
 const inter = Inter({ subsets: ["latin"] })
 
