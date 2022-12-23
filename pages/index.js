@@ -49,14 +49,19 @@ export default function Home({ data }) {
       const formResult = (({ passwordConfirmation, terms, ...rest }) => rest)(
         values
       )
-
+      const successPageData = (({
+        password,
+        passwordConfirmation,
+        terms,
+        ...rest
+      }) => rest)(values)
       const response = await postData(formResult)
 
       console.log("form submitted")
       console.log(formResult)
       console.log(response.status)
       if (response.status === 201) {
-        router.push({ pathname: "/success", query: values })
+        router.push({ pathname: "/success", query: successPageData })
       } else {
         alert("Something went wrong, unable to submit form")
       }
