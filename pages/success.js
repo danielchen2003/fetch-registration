@@ -15,11 +15,11 @@ export default function Success() {
     >
       <div className="w-1/3 p-16 text-gray-700 bg-white rounded-lg font-latoRegular">
         <h1 className="pb-4 text-3xl font-latoBold">
-          Thanks for the email {router.query.name} ✨
+          Thanks for registration {router.query.name} ✨
         </h1>
         <p className="text-lg text-gray-500">
-          We have sent you an email over at {router.query.email}. We will get
-          back to you as soon as we can!
+          We have sent you an verification email over at {router.query.email}.
+          Please verify your email address first.
         </p>
       </div>
     </m.main>
